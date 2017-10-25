@@ -20,6 +20,7 @@
 5. 以上
 ============
 应用目录结构
+~~~
 application
 |---backend             后台目录
 |---component           公共Redis缓存模型组件 
@@ -33,6 +34,6 @@ application
     |---service         服务层模型目录
     |---validate        验证器目录
     |---view            视图模板
-
+~~~
 三层模型在该应用中的角色作用分析
-[三层模型关系和作用](https://processon.com/chart_image/59ee2178e4b08b9e91800f91.png)
+[三层模型关系和作用](https://raw.githubusercontent.com/geesim/mytp5app/master/59ee2178e4b08b9e91800f91.png)
