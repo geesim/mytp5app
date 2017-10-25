@@ -18,3 +18,21 @@
 3. 功能开发    同上
 4. 功能测试    未开始
 5. 以上
+============
+应用目录结构
+application
+|---backend             后台目录
+|---component           公共Redis缓存模型组件 
+|---driver              用户驱动目录(暂时没有用)
+|---extra               应用扩展配置目录
+|---frontend            前台目录
+    |---behavior        行为目录
+    |---controller      控制器目录
+    |---logic           逻辑层模型目录
+    |---model           数据层模型目录
+    |---service         服务层模型目录
+    |---validate        验证器目录
+    |---view            视图模板
+
+三层模型在该应用中的角色作用分析
+[三层模型关系和作用](https://processon.com/chart_image/59ee2178e4b08b9e91800f91.png)
