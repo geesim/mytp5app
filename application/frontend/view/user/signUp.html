@@ -1,0 +1,56 @@
+<html>
+	{include file="common/header"}
+    <body>
+        {include file="common/topBar"}
+        <section id="sign-up-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-2">
+                        <form action="{:url('frontend/User/signUp')}" method="POST" class="form-horizontal" role="form">
+                            <input type="hidden" name="randKey" value="{$randKey}">
+                            <div class="form-group">
+                                <label for="username" class="col-sm-2 control-label">名字</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="username" id="username" placeholder="请输入名字">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="col-sm-2 control-label">密码</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" name="pwd" id="password" placeholder="Please input your password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="rePassword" class="col-sm-2 control-label">验证密码</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" name="rePassword" id="rePassword" placeholder="Please input your password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-sm-2 control-label">邮箱</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="email" id="email" placeholder="请输入邮箱">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <div class="checkbox">
+                                        <label><input name="rememberMe" type="checkbox">请记住我</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+
+                                    <button id="sign-up-btn" type="submit" class="btn btn-primary">免费注册</button>
+                               </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </section>
+    </body>
+	{include file="common/footer"}
+</html>

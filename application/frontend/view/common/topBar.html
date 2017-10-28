@@ -1,0 +1,26 @@
+<section id="top-bar" class="hidden-xs">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-11 col-md-offset-1">
+				<div class="row">
+					<div class="col-sm-2 col-md-2"><span class="glyphicon glyphicon-map-marker"></span> 广东</div>
+					<div class="col-sm-3 col-md-3">
+						{empty name="userInfo"}				
+						<a href="{:url('frontend/User/signIn')}" alt="">你好，请登录</a>
+						<a href="{:url('frontend/User/signUp')}" alt="">免费注册</a>
+						{else /}
+						<a href="{:url('frontend/User/userCenter')}" alt="">
+							{$userInfo['username']} <span class="badge"></span>
+						</a>
+						{/empty}
+					</div>
+					<div class="col-sm-2 col-md-2"><a href="{:url('frontend/User/userCenter')}">用户中心</a></div>
+					<div class="col-sm-2 col-md-3">
+						<a href="{:url('frontend/Cart/index')}">我的购物车 <span class="glyphicon glyphicon-shopping-cart"></span></a>
+					</div>
+					<div class="col-sm-2 col-md-2"><a href="{:url('frontend/User/favorite')}">收藏夹</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
